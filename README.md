@@ -1,2 +1,2 @@
-# Programming-Fundamentals-with-C-
+Programming-Fundamentals-with-C#
 This repository contains solutions to the tasks
