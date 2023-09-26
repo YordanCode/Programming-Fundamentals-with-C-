@@ -1,22 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ArrayRotation
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int[] array = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            string[] separator = { " " };
+            int[] array = Console.ReadLine().Split(separator,StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse).ToArray();
             int rotations = int.Parse(Console.ReadLine());
             
             int timesToRotate = rotations % array.Length;
             for (int i = 1; i <= timesToRotate; i++)
             {
-
                 int firstElement = array[0];
 
                 for (int j = 1; j < array.Length; j++)
@@ -27,9 +25,6 @@ namespace ArrayRotation
             }
 
             Console.WriteLine(String.Join(" ", array));
-
         }
     }
 }
-
-
