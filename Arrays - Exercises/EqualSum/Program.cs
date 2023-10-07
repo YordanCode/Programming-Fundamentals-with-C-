@@ -14,7 +14,7 @@ class Program
         else
             Console.WriteLine("no");
     }
-    static int FindElementWithEqualSums(int[] arrayOfNumbers)
+    static int FindSubArraysWithEqualSums(int[] arrayOfNumbers)
     {
         for (int i = 0; i < arrayOfNumbers.Length; i++)
         {
