@@ -7,7 +7,7 @@ class Program
         int[] numbers = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries)
             .Select(int.Parse).ToArray();
 
-        int index = FindElementWithEqualSums(numbers);
+        int index = FindSubArraysWithEqualSums(numbers);
 
         if (index != -1)
             Console.WriteLine(index);
