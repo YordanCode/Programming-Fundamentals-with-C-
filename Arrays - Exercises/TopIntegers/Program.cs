@@ -1,4 +1,3 @@
-﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,3 +26,4 @@ class Program
         Console.WriteLine(string.Join(" ", topIntegers));
     }
 }
+
